@@ -1,6 +1,5 @@
 # Day 2 Part 1
 
-"""
 two = 0
 
 three = 0
@@ -19,11 +18,10 @@ with open("boxes.txt", "r") as f:
             two += 1
 
 print(two * three)
-"""
 
 # Day 2 Part 2
 
-def match(s1, s2):
+def match(line, code):
     pos = -1
 
     for i, (char1, char2) in enumerate(zip(line, code)):
